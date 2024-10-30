@@ -1,0 +1,26 @@
+// _globalColor.scss
+
+// Light Theme Colors
+$light-background: #ffffff;
+$light-text: #000000;
+
+// Dark Theme Colors
+$dark-background: rgb(11, 17, 32);
+$dark-text: #ffffff;
+
+// Default Theme
+$background-color: $dark-background;
+$text-color: $dark-text;
+
+$primary-color: #ff6969;
+$secondary-color: #ffffff;
+
+.light-theme {
+  background-color: $light-background;
+  color: $light-text;
+}
+
+.dark-theme {
+  background-color: $dark-background;
+  color: $dark-text;
+}

@@ -1,0 +1,28 @@
+.greetings {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  height: calc(100vh - 50px);
+}
+
+.greetingText {
+  flex: 4;
+  text-align: center;
+}
+
+.greetingAnimation {
+  flex: 3;
+  filter: drop-shadow(1px 0 20px rgba(169, 112, 179, 0.5019607843));
+}
+
+.greetingText h2 {
+  font-size: 2rem;
+}
+
+.greetingText h1 {
+  font-size: 3rem;
+}
+
+.greetingText h3 {
+  font-size: 1.5rem;
+}
