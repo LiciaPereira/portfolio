@@ -38,15 +38,15 @@
   .menu {
     display: none; // Hide the menu by default on smaller screens
     position: absolute;
-    top: 60px;
-    right: 20px;
+    top: 40px;
+    right: 19px;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
     border-radius: 8px;
     z-index: 1;
-    background-color: $background-color;
-    color: $text-color;
+    background-color: #dddddd;
+    color: #000;
     border: 1px solid $primary-color;
     align-items: self-end;
   }

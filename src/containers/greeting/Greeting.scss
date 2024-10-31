@@ -26,3 +26,20 @@
 .greetingText h3 {
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .greetings {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+
+  .greetingText {
+    flex: 1;
+  }
+
+  .greetingAnimation {
+    flex: 1;
+    height: 1rem;
+  }
+}

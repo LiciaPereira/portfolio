@@ -1,6 +1,6 @@
 import React from "react";
 import "./Greeting.scss";
-import { portfolioData } from "../../config/portfolio";
+import { portfolioData } from "../../config/portfolioData";
 import LottieAnimation from "../../components/LottieAnimation/LottieAnimation";
 
 const Greeting = () => {

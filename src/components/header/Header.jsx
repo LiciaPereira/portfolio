@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ToggleSwitch from "../toggleSwitch/ToggleSwitch";
 import "./Header.scss";
-import { ReactComponent as LPLogo } from "../../assets/LPLogo.svg";
+import { ReactComponent as LPLogo } from "../../assets/logos/LPLogo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,8 +17,8 @@ const Header = ({ theme, toggleTheme }) => {
   //if the click outside the menu, it should close
   const handleOutsideClick = (e) => {
     if (
-      !e.target.closest(".menu-icon")
-      //&& !e.target.closest(".toggle-switch")
+      !e.target.closest(".menu-icon") &&
+      !e.target.closest(".toggle-switch")
     ) {
       setIsOpen(false);
     }

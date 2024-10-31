@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Greeting from "./containers/greeting/Greeting";
 import Skills from "./containers/skills/Skills";
 import Projects from "./containers/projects/Projects";
@@ -24,8 +23,8 @@ const App = () => {
     <>
       <Header theme={theme} toggleTheme={toggleTheme} />
       <Greeting />
-      <Skills />
       <Projects />
+      <Skills />
       <Experiences />
       <Contact />
     </>

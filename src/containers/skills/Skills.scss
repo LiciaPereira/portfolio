@@ -1,1 +1,51 @@
 @import "../../_globalColor.scss";
+
+.skillsSection {
+  margin: 10rem 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillsTitle {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 800px;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  width: 4rem;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(169, 112, 179, 0.5019607843);
+}
+
+.skills-card:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.skill-icon {
+  min-block-size: 50px;
+}
+
+.skill-name {
+  font-size: 1rem;
+}

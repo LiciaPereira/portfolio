@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
-import DevWithAnIdea from "../../assets/DevWithAnIdea.json";
-import DevSolutioning from "../../assets/DevSolutioning.json";
-import MailLetter from "../../assets/MailLetter.json";
-import WebDesignData from "../../assets/WebDesignData.json";
+import DevWithAnIdea from "../../assets/animations/DevWithAnIdea.json";
+import DevSolutioning from "../../assets/animations/DevSolutioning.json";
+import MailLetter from "../../assets/animations/MailLetter.json";
+import WebDesignData from "../../assets/animations/WebDesignData.json";
 
 const LottieAnimation = (props) => {
   const containerRef = useRef(null);
