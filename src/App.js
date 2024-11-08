@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import Greeting from "./containers/greeting/Greeting";
 import Skills from "./containers/skills/Skills";
 import Projects from "./containers/projects/Projects";
-import Experiences from "./containers/experiences/Experiences";
 import Contact from "./containers/contact/Contact";
 import Header from "./components/header/Header";
+import Footer from "./containers/footer/Footer";
 const App = () => {
   const storedTheme = localStorage.getItem("theme") || "dark-theme";
   const [theme, setTheme] = useState(storedTheme);
@@ -25,8 +25,8 @@ const App = () => {
       <Greeting />
       <Projects />
       <Skills />
-      <Experiences />
       <Contact />
+      <Footer />
     </>
   );
 };
