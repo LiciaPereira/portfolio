@@ -5,6 +5,7 @@ import Projects from "./containers/projects/Projects";
 import Contact from "./containers/contact/Contact";
 import Header from "./components/header/Header";
 import Footer from "./containers/footer/Footer";
+
 const App = () => {
   const storedTheme = localStorage.getItem("theme") || "dark-theme";
   const [theme, setTheme] = useState(storedTheme);

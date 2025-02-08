@@ -4,8 +4,8 @@ import { portfolioData } from "../../config/portfolioData";
 
 function Skills() {
   return (
-    <div className="skillsSection">
-      <h2 className="skillsTitle">My Skills</h2>
+    <div className="skills-section">
+      <h2 className="skills-title">My Skills</h2>
       <div className="skills-cards">
         {portfolioData.skills.map((skills, index) => (
           <div className="skills-card" key={index}>

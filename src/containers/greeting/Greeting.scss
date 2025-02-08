@@ -1,3 +1,5 @@
+@import "../../_globalColor.scss";
+
 .greetings {
   display: flex;
   align-items: center;
@@ -5,26 +7,32 @@
   height: calc(100vh - 50px);
 }
 
-.greetingText {
+.scroll-down-symbol {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: $primary-color;
+  cursor: pointer;
+
+  svg {
+    animation-duration: 2s !important;
+  }
+
+  svg:hover {
+    animation: none !important;
+  }
+}
+
+.greeting-text {
   flex: 4;
   text-align: center;
 }
 
-.greetingAnimation {
+.greeting-animation {
   flex: 3;
-  filter: drop-shadow(1px 0 20px rgba(169, 112, 179, 0.5019607843));
-}
-
-.greetingText h2 {
-  font-size: 2rem;
-}
-
-.greetingText h1 {
-  font-size: 3rem;
-}
-
-.greetingText h3 {
-  font-size: 1.5rem;
+  filter: drop-shadow(1px 0 20px rgba($primary-color, 0.3));
 }
 
 @media screen and (max-width: 768px) {
@@ -34,12 +42,39 @@
     position: relative;
   }
 
-  .greetingText {
+  .greeting-text {
     flex: 1;
   }
 
-  .greetingAnimation {
+  .greeting-animation {
     flex: 1;
     height: 1rem;
   }
+}
+
+//cool underline
+
+.greeting-name a {
+  position: relative;
+  display: inline-block;
+}
+.greeting-name .link-svgline {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 20px;
+  transition: stroke-dashoffset 0.3s ease-in-out;
+  transform: translateY(-90%);
+  fill: none;
+  stroke: #b1d474;
+  stroke-width: 5;
+  stroke-dasharray: 400px;
+  stroke-dashoffset: 400px;
+}
+
+.link-svgline a:hover svg.link-svgline {
+  stroke-dashoffset: 0px;
 }

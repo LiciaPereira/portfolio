@@ -8,15 +8,25 @@ $light-text: #000000;
 $dark-background: rgb(11, 17, 32);
 $dark-text: #ffffff;
 
-$primary-color: #ff6969;
+$primary-color: #ed8080;
 $secondary-color: #ffffff;
 
 .light-theme {
   background-color: $light-background;
   color: $light-text;
+  $projectBgColor: rgba($primary-color, 0.2);
 }
 
 .dark-theme {
   background-color: $dark-background;
   color: $dark-text;
+  $projectBgColor: red !important;
 }
+
+//pastel colors
+$pastel-0: #eeebfc;
+$pastel-1: #fcf0ef;
+$pastel-2: #eafdf9;
+$pastel-3: #e7f2fc;
+
+$projectBgColor: rgba($primary-color, 0.2);

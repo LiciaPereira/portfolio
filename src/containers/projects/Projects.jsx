@@ -4,39 +4,50 @@ import { portfolioData } from "../../config/portfolioData";
 
 function Projects() {
   return (
-    <div className="projectsSection">
-      <div className="projectsHeader">
-        <h1>Projects</h1>
-        <p>My featured projects and some of my work</p>
+    <div className="projects-section">
+      <div className="projects-header">
+        <h1 className="projects-title">Projects</h1>
+        <p className="projects-description">
+          My featured projects and some of my work
+        </p>
       </div>
-      <div className="projectsContainer">
+
+      <div className="projects-container">
+        {" "}
         {portfolioData.projects.map((project, index) => (
           <div
-            // if the index is even, the project will be displayed normally, if the index is odd, the project will be displayed in reverse
-            className={`project ${index % 2 === 0 ? "" : "reverse"}`}
+            className={`project-row ${index % 2 === 0 ? "right" : "left"}`}
             key={index}
           >
-            <div className="projectContainer">
-              <div className="projectImage">
-                <img
-                  src={require(`../../assets/projects/${project.image}`)}
-                  alt={project.title}
+            <div className="project-video-container">
+              <video autoPlay loop muted className="project-video">
+                <source
+                  src={require(`../../assets/projects/${project.video}`)}
+                  type="video/mp4"
+                  alt={`${project.title} video`}
                 />
-              </div>
+              </video>
             </div>
-            <div className="projectDetails">
-              <div>
-                <p className="projectName">{project.title}</p>
-                <p className="projectDescription">{project.description}</p>
+            <div className="project-description">
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
+              <ul className="project-skills">
+                {project.usedSkills.map((skill) => (
+                  <li className="project-skill">{skill}</li>
+                ))}
+              </ul>
+              <div className="project-links">
+                {project.links.map((link) => (
+                  <a
+                    href={link.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-link"
+                  >
+                    {link.name}
+                  </a>
+                ))}
               </div>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="projectLink"
-              >
-                View Project
-              </a>
             </div>
           </div>
         ))}
