@@ -5,22 +5,63 @@ $light-background: #ffffff;
 $light-text: #000000;
 
 // Dark Theme Colors
-$dark-background: rgb(11, 17, 32);
+$dark-background: #0b1120;
 $dark-text: #ffffff;
 
 $primary-color: #ed8080;
 $secondary-color: #ffffff;
 
+$dark-secondary-backrgound-color: #10182e;
+
+// Section background colors for light theme
+$light-section-colors: (
+  default: rgba($primary-color, 0.1),
+  projects: rgba($primary-color, 0.15),
+  contact: rgba($primary-color, 0.12),
+);
+
+// Section background colors for dark theme
+$dark-section-colors: (
+  default: rgba($primary-color, 0.08),
+  projects: $dark-secondary-backrgound-color,
+  contact: $dark-secondary-backrgound-color,
+);
+
+// Wave colors
+$light-wave-colors: (
+  projects: rgba($primary-color, 0.25),
+  skills: rgba($primary-color, 0.2),
+  contact: rgba($primary-color, 0.22),
+);
+
+$dark-wave-colors: (
+  projects: $dark-secondary-backrgound-color,
+  skills: $dark-secondary-backrgound-color,
+  contact: $dark-secondary-backrgound-color,
+);
+
 .light-theme {
   background-color: $light-background;
   color: $light-text;
-  $projectBgColor: rgba($primary-color, 0.2);
+  --project-bg: #{map-get($light-section-colors, projects)};
+  --skills-bg: #{map-get($light-section-colors, skills)};
+  --contact-bg: #{map-get($light-section-colors, contact)};
+  --text-color: #{$light-text};
+  --wave-projects: #{map-get($light-wave-colors, projects)};
+  --wave-skills: #{map-get($light-wave-colors, skills)};
+  --wave-contact: #{map-get($light-wave-colors, contact)};
 }
 
 .dark-theme {
   background-color: $dark-background;
   color: $dark-text;
-  $projectBgColor: red !important;
+  --project-bg: #{map-get($dark-section-colors, projects)};
+  --skills-bg: #{map-get($dark-section-colors, skills)};
+  --contact-bg: #{map-get($dark-section-colors, contact)};
+  --text-color: #{$dark-text};
+  --wave-projects: #{map-get($dark-wave-colors, projects)};
+  --wave-skills: #{map-get($dark-wave-colors, skills)};
+  --wave-contact: #{map-get($dark-wave-colors, contact)};
 }
 
 //pastel colors
@@ -29,4 +70,4 @@ $pastel-1: #fcf0ef;
 $pastel-2: #eafdf9;
 $pastel-3: #e7f2fc;
 
-$projectBgColor: rgba($primary-color, 0.2);
+$projectBgColor: var(--project-bg);

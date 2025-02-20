@@ -7,7 +7,7 @@
   padding: 2rem 2rem 4rem;
   text-align: center;
   min-height: 70vh;
-  background-color: $projectBgColor;
+  background-color: var(--project-bg);
   margin-top: 50px;
 }
 
@@ -18,12 +18,12 @@
   position: absolute;
   bottom: -50px;
   left: 0;
-  background: $projectBgColor;
+  background: var(--wave-projects);
   background-size: auto;
   background-repeat: repeat no-repeat;
   background-position: 37vw bottom;
-  mask-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  80' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 59L50 55C100 51 200 44 300 30C400 15 500 -6 600 1C700 8 800 44 900 59C1000 73 1100 66 1150 62L1200 59V80H1150C1100 80 1000 80 900 80C800 80 700 80 600 80C500 80 400 80 300 80C200 80 100 80 50 80H0V59Z' fill='rgba(237, 128, 128)'/></svg>");
-  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  80' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 59L50 55C100 51 200 44 300 30C400 15 500 -6 600 1C700 8 800 44 900 59C1000 73 1100 66 1150 62L1200 59V80H1150C1100 80 1000 80 900 80C800 80 700 80 600 80C500 80 400 80 300 80C200 80 100 80 50 80H0V59Z' fill='rgba(237, 128, 128)'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  80' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 59L50 55C100 51 200 44 300 30C400 15 500 -6 600 1C700 8 800 44 900 59C1000 73 1100 66 1150 62L1200 59V80H1150C1100 80 1000 80 900 80C800 80 700 80 600 80C500 80 400 80 300 80C200 80 100 80 50 80H0V59Z' fill='white'/></svg>");
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  80' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 59L50 55C100 51 200 44 300 30C400 15 500 -6 600 1C700 8 800 44 900 59C1000 73 1100 66 1150 62L1200 59V80H1150C1100 80 1000 80 900 80C800 80 700 80 600 80C500 80 400 80 300 80C200 80 100 80 50 80H0V59Z' fill='white'/></svg>");
 }
 
 .projects-header {
@@ -32,10 +32,16 @@
 
 .project-row {
   display: flex;
-  width: 70vw;
-  margin-bottom: 2rem;
-  background-color: $projectBgColor;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  background-color: rgba($primary-color, 0.1);
   border-radius: 1rem;
+  padding: 2rem;
+
+  .dark-theme & {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
 }
 
 .project-row + .project-row {
@@ -52,6 +58,16 @@
   align-items: center;
   justify-content: center;
   width: 50%;
+
+  h2 {
+    color: inherit;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: inherit;
+    line-height: 1.6;
+  }
 }
 
 .project-video-container {
@@ -59,8 +75,11 @@
 }
 
 .project-video {
-  padding: 2rem;
+  padding: 2rem 1rem;
   width: 450px;
+  margin: 0 1rem;
+  background-color: white;
+  border-radius: 15px;
 }
 
 .project-skills {
@@ -77,11 +96,15 @@
 
 .project-skill {
   list-style: none;
-  background-color: #ffcfbf79;
+  background-color: white;
   padding: 5px 10px;
   margin: 5px;
   width: auto;
-  border-radius: 50px;
+  border-radius: 12px;
+
+  .dark-theme & {
+    color: black;
+  }
 }
 
 .project-links {
@@ -99,12 +122,29 @@
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  .dark-theme & {
+    background-color: rgba($primary-color, 0.8);
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
 }
 
 // Media Queries
 @media (max-width: 768px) {
   .project-row {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .project-description {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
   }
 
   .project-video-container {
@@ -112,12 +152,43 @@
   }
 
   .project-video {
-    padding: 0;
+    width: 100%;
+    max-width: 450px;
+    padding: 1rem 0;
+  }
+
+  .project-skills {
+    justify-content: center;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .project-video {
-    width: 300px;
+  .projects-section {
+    padding: 2rem 1rem;
+  }
+
+  .project-row {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-skill {
+    font-size: 0.9rem;
+    padding: 3px 8px;
+  }
+
+  .project-link {
+    width: 100%;
+    text-align: center;
   }
 }
