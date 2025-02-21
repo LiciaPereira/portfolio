@@ -41,6 +41,7 @@
 }
 
 .contact-title {
+  text-align: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -187,11 +188,19 @@
   .success-message {
     width: 100%;
   }
+
+  .contact-section {
+    margin: 50px 0 0 0;
+  }
+
+  .contact-section::before {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
   .contact-container {
-    padding: 2rem 1rem;
+    padding: 2rem;
     width: 100%;
   }
 

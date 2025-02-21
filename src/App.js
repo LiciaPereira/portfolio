@@ -23,10 +23,20 @@ const App = () => {
   return (
     <>
       <Header theme={theme} toggleTheme={toggleTheme} />
-      <Greeting />
-      <Projects />
-      <Skills />
-      <Contact />
+      <main>
+        <section id="greetings">
+          <Greeting />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
       <Footer />
     </>
   );

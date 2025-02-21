@@ -6,15 +6,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ theme, toggleTheme }) => {
-  //state to manage the menu open/close
   const [isMenuOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  //function to toggle the menu open/close
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const toggleMenu = () => {
     setIsOpen(!isMenuOpen);
   };
 
-  //if the click outside the menu, it should close
   const handleOutsideClick = (e) => {
     if (
       !e.target.closest(".menu-icon") &&
@@ -24,38 +33,56 @@ const Header = ({ theme, toggleTheme }) => {
     }
   };
 
-  //create a listener to the document and pass the element the user clicked on
   useEffect(() => {
     document.addEventListener("click", handleOutsideClick);
     return () => document.removeEventListener("click", handleOutsideClick);
   }, []);
 
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      const headerOffset = 60;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    setIsOpen(false);
+  };
+
   return (
-    <header className="header">
-      <a href="/#greetings">
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+      <a href="/#" onClick={(e) => handleNavClick(e, "greetings")}>
         <LPLogo className="logo" />
       </a>
       <div className="menu-icon">
         <FontAwesomeIcon
           icon={faBars}
-          //add the open class if the menu is open
           className={`menu-icon ${isMenuOpen ? "open" : ""}`}
           onClick={toggleMenu}
         />
       </div>
 
       <ul className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
-        <li onClick={toggleMenu}>
-          <a href="#skills">Skills</a>
+        <li>
+          <a href="#projects" onClick={(e) => handleNavClick(e, "projects")}>
+            Projects
+          </a>
         </li>
-        <li onClick={toggleMenu}>
-          <a href="#projects">Projects</a>
+        <li>
+          <a href="#skills" onClick={(e) => handleNavClick(e, "skills")}>
+            Skills
+          </a>
         </li>
-        <li onClick={toggleMenu}>
-          <a href="#experiences">Experiences</a>
-        </li>
-        <li onClick={toggleMenu}>
-          <a href="#contact">Contact</a>
+        <li>
+          <a href="#contact" onClick={(e) => handleNavClick(e, "contact")}>
+            Contact
+          </a>
         </li>
         <ToggleSwitch theme={theme} toggleTheme={toggleTheme} />
       </ul>

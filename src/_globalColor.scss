@@ -11,17 +11,20 @@ $dark-text: #ffffff;
 $primary-color: #ed8080;
 $secondary-color: #ffffff;
 
+$lighter-primary-color: #fdf0f0;
 $dark-secondary-backrgound-color: #10182e;
 
 // Section background colors for light theme
 $light-section-colors: (
-  default: rgba($primary-color, 0.1),
-  projects: rgba($primary-color, 0.15),
-  contact: rgba($primary-color, 0.12),
+  header: rgba($primary-color, 0.12),
+  default: $lighter-primary-color,
+  projects: $lighter-primary-color,
+  contact: $lighter-primary-color,
 );
 
 // Section background colors for dark theme
 $dark-section-colors: (
+  header: rgba($dark-secondary-backrgound-color, 0.12),
   default: rgba($primary-color, 0.08),
   projects: $dark-secondary-backrgound-color,
   contact: $dark-secondary-backrgound-color,
@@ -29,9 +32,9 @@ $dark-section-colors: (
 
 // Wave colors
 $light-wave-colors: (
-  projects: rgba($primary-color, 0.25),
-  skills: rgba($primary-color, 0.2),
-  contact: rgba($primary-color, 0.22),
+  projects: $lighter-primary-color,
+  skills: $lighter-primary-color,
+  contact: $lighter-primary-color,
 );
 
 $dark-wave-colors: (
@@ -43,6 +46,7 @@ $dark-wave-colors: (
 .light-theme {
   background-color: $light-background;
   color: $light-text;
+  --header-bg: #{map-get($light-section-colors, header)};
   --project-bg: #{map-get($light-section-colors, projects)};
   --skills-bg: #{map-get($light-section-colors, skills)};
   --contact-bg: #{map-get($light-section-colors, contact)};
@@ -55,6 +59,7 @@ $dark-wave-colors: (
 .dark-theme {
   background-color: $dark-background;
   color: $dark-text;
+  --header-bg: #{map-get($dark-section-colors, header)};
   --project-bg: #{map-get($dark-section-colors, projects)};
   --skills-bg: #{map-get($dark-section-colors, skills)};
   --contact-bg: #{map-get($dark-section-colors, contact)};
@@ -64,7 +69,7 @@ $dark-wave-colors: (
   --wave-contact: #{map-get($dark-wave-colors, contact)};
 }
 
-//pastel colors
+// Pastel colors
 $pastel-0: #eeebfc;
 $pastel-1: #fcf0ef;
 $pastel-2: #eafdf9;

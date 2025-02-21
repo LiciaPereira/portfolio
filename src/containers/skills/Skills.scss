@@ -13,7 +13,7 @@
 .skills-section::before {
   content: "";
   width: 100%;
-  height: 50px;
+  height: 55px;
   position: absolute;
   top: 0px;
   left: 0;
@@ -85,6 +85,10 @@
 
   .skill-icon {
     min-block-size: 40px;
+  }
+
+  .skills-section::before {
+    display: none;
   }
 }
 
