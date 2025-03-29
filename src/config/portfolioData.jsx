@@ -49,7 +49,7 @@ export const portfolioData = {
       links: [
         {
           name: "Live",
-          link: "http://liciaflix.web.app/",
+          link: "https://licia-flix.web.app/",
         },
         {
           name: "GitHub",

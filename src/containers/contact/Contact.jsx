@@ -36,6 +36,11 @@ const Contact = () => {
       .then(
         () => {
           setStatus("success");
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
           console.log("SUCCESS!");
         },
         (error) => {
