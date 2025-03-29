@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://liciapereira.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -13,7 +14,6 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.7",
-    "gh-pages": "^6.3.0",
     "lottie-react": "^2.4.0",
     "lottie-web": "^5.12.2",
     "react": "^18.3.1",
@@ -25,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass": "^1.80.5"
   }
 }
