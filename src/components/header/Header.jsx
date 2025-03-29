@@ -60,7 +60,7 @@ const Header = ({ theme, toggleTheme }) => {
       <a href="/#" onClick={(e) => handleNavClick(e, "greetings")}>
         <LPLogo className="logo" />
       </a>
-      <div className="menu-icon">
+      <div>
         <FontAwesomeIcon
           icon={faBars}
           className={`menu-icon ${isMenuOpen ? "open" : ""}`}
@@ -69,6 +69,11 @@ const Header = ({ theme, toggleTheme }) => {
       </div>
 
       <ul className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
+        <li>
+          <a href="#greetings" onClick={(e) => handleNavClick(e, "greetings")}>
+            Home
+          </a>
+        </li>
         <li>
           <a href="#projects" onClick={(e) => handleNavClick(e, "projects")}>
             Projects
