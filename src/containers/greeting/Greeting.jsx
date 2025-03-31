@@ -16,10 +16,10 @@ const Greeting = () => {
     <div className="greetings">
       <div className="greeting-text">
         <h2>
-          Hello! I'm <span className="greeting-name">{name}</span>
+          Hello! I'm <span className="greeting-name">{name},</span>
         </h2>
         <h1>Software Developer</h1>
-        <h2>{bio}</h2>
+        <h2 className="greeting-bio">{bio}</h2>
       </div>
       <div className="greeting-animation">
         <LottieAnimation props="DevWithAnIdea" />

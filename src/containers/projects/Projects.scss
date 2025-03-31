@@ -38,6 +38,9 @@
   background-color: rgba($primary-color, 0.1);
   border-radius: 1rem;
   padding: 2rem;
+  column-gap: 1rem;
+
+  box-shadow: rgba(149, 157, 165, 0.12) 0px 0px 6px;
 
   .dark-theme & {
     background-color: rgba(255, 255, 255, 0.05);
@@ -67,54 +70,56 @@
   p {
     color: inherit;
     line-height: 1.6;
+    margin: 0;
   }
 }
 
-.project-video-container {
-  width: 50%;
-  margin: auto 1rem;
-}
-
-.project-video {
+.project-image {
   padding: 2rem 1rem;
-  width: 450px;
-  margin: 0 1rem;
-  background-color: white;
-  border-radius: 15px;
+  max-width: 450px;
+  border: none;
+  object-fit: cover;
+
+  img {
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+  }
 }
 
 .project-skills {
-  margin: 20px auto 0 auto;
-  padding: 5px 0;
+  margin: 0;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .project-skill {
   list-style: none;
-  background-color: white;
   padding: 5px 10px;
-  margin: 5px;
   width: auto;
-  border-radius: 12px;
+  border-radius: 30px;
 
-  .dark-theme & {
-    color: black;
+  .checkmark {
+    vertical-align: unset;
+    font-size: 10px;
+    margin-right: 3px;
   }
 }
 
 .project-links {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
 }
 
 .project-link {
   background-color: $primary-color;
+  background-image: linear-gradient($primary-color, #ff6d66);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
   padding: 10px 15px;
   margin: 10px;
   width: auto;
@@ -124,6 +129,13 @@
   color: white;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  white-space: nowrap;
+
+  .new-tab-icon {
+    vertical-align: unset;
+    font-size: 0.8rem;
+    margin-left: 6px;
+  }
 
   .dark-theme & {
     background-color: rgba($primary-color, 0.8);
@@ -165,9 +177,8 @@
   }
 
   .project-links {
-    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap;
   }
 
   .projects-section::before {
@@ -195,7 +206,6 @@
   }
 
   .project-link {
-    width: 100%;
     text-align: center;
   }
 }

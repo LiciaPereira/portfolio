@@ -14,7 +14,7 @@ import { ReactComponent as Jira } from "../assets/icons/jira.svg";
 export const portfolioData = {
   greeting: {
     name: "Licia",
-    bio: "passionate about creating solutions.",
+    bio: "who solves puzzles through code to create better user experiences.",
   },
   skills: [
     { name: "HTML", icon: { HTML } },
@@ -33,30 +33,19 @@ export const portfolioData = {
   projects: [
     {
       title: "UP! MKT Digital",
-      description: "A marketing website for a company",
-      links: [
-        {
-          name: "Live",
-          link: "http://upmkt.digital/",
-        },
-      ],
-      video: "upmktdigital.mp4",
+      description:
+        "A delicate WordPress-based marketing site showcasing modern branding and services.",
+      url: "upmkt.digital/",
+      image: "upmktdigital.png", //1350px width
       usedSkills: ["Wordpress", "PHP", "CSS", "JavaScript"],
     },
     {
       title: "Netflix Clone",
-      description: "A Netflix clone with React and Stripe",
-      links: [
-        {
-          name: "Live",
-          link: "https://licia-flix.web.app/",
-        },
-        {
-          name: "GitHub",
-          link: "https://github.com/liciapereira/liciaflix",
-        },
-      ],
-      video: "liciaflix.mp4",
+      description:
+        "A feature-rich React app mimicking Netflix, with Firebase backend and Stripe integration.",
+      url: "licia-flix.web.app/",
+      github: "https://github.com/liciapereira/liciaflix",
+      image: "liciaflix.png",
       usedSkills: [
         "React",
         "SASS",
