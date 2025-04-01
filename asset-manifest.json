@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7ace9b19.css",
-    "main.js": "/portfolio/static/js/main.9720e16f.js",
+    "main.css": "/portfolio/static/css/main.eb017c27.css",
+    "main.js": "/portfolio/static/js/main.eceea64e.js",
     "static/media/liciaflix.webp": "/portfolio/static/media/liciaflix.c01fdde08404c1fb78df.webp",
     "static/media/upmktdigital.webp": "/portfolio/static/media/upmktdigital.5b9606231867807e47e3.webp",
     "static/media/LPLogo.svg": "/portfolio/static/media/LPLogo.a1388123ab7d5dd5126c4078b44af312.svg",
@@ -18,11 +18,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.cedea6c9cccbcff87a40de636a615ccf.svg",
     "static/media/git.svg": "/portfolio/static/media/git.d85c31a48d9019141a693d94bffe5abf.svg",
     "static/media/html.svg": "/portfolio/static/media/html.04b1cc848fd7209d6476b91130746359.svg",
-    "main.7ace9b19.css.map": "/portfolio/static/css/main.7ace9b19.css.map",
-    "main.9720e16f.js.map": "/portfolio/static/js/main.9720e16f.js.map"
+    "main.eb017c27.css.map": "/portfolio/static/css/main.eb017c27.css.map",
+    "main.eceea64e.js.map": "/portfolio/static/js/main.eceea64e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ace9b19.css",
-    "static/js/main.9720e16f.js"
+    "static/css/main.eb017c27.css",
+    "static/js/main.eceea64e.js"
   ]
 }
