@@ -35,7 +35,7 @@ export const portfolioData = {
       title: "UP! MKT Digital",
       description:
         "A delicate WordPress-based marketing site showcasing modern branding and services.",
-      url: "upmkt.digital/",
+      url: "http://upmkt.digital/",
       image: "upmktdigital.webp", //1350px width
       usedSkills: ["Wordpress", "PHP", "CSS", "JavaScript"],
     },
@@ -43,7 +43,7 @@ export const portfolioData = {
       title: "Netflix Clone",
       description:
         "A feature-rich React app mimicking Netflix, with Firebase backend and Stripe integration.",
-      url: "licia-flix.web.app/",
+      url: "http://licia-flix.web.app/",
       github: "https://github.com/liciapereira/liciaflix",
       image: "liciaflix.webp",
       usedSkills: [
