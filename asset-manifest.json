@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.eb017c27.css",
-    "main.js": "/portfolio/static/js/main.eceea64e.js",
-    "static/media/liciaflix.webp": "/portfolio/static/media/liciaflix.c01fdde08404c1fb78df.webp",
-    "static/media/upmktdigital.webp": "/portfolio/static/media/upmktdigital.5b9606231867807e47e3.webp",
-    "static/media/LPLogo.svg": "/portfolio/static/media/LPLogo.a1388123ab7d5dd5126c4078b44af312.svg",
-    "static/media/sass.svg": "/portfolio/static/media/sass.832bcffbbf6389bf302c2ed392aa9c6c.svg",
-    "static/media/dotnet.svg": "/portfolio/static/media/dotnet.f8e347c567421230db5e2855615206ac.svg",
-    "static/media/mysql.svg": "/portfolio/static/media/mysql.746a23ecb816e8ad1105e209b56ef5d0.svg",
-    "static/media/react.svg": "/portfolio/static/media/react.0f4ba0240b3b4c6a16de527f4893e6c4.svg",
-    "static/media/python.svg": "/portfolio/static/media/python.fe6bd821b3c760108bc2579ac8ab8320.svg",
-    "static/media/javascript.svg": "/portfolio/static/media/javascript.fe725c64699bd83cef8f4277d029bbf8.svg",
-    "static/media/jira.svg": "/portfolio/static/media/jira.754465c4af677b8b8c73207a8f2fedb0.svg",
-    "static/media/typescript.svg": "/portfolio/static/media/typescript.a4562526c286a063fcf48b708d15c0d0.svg",
-    "index.html": "/portfolio/index.html",
-    "static/media/csharp.svg": "/portfolio/static/media/csharp.09c8b9f1f62562d41dff693ab10ae4c7.svg",
-    "static/media/css.svg": "/portfolio/static/media/css.cedea6c9cccbcff87a40de636a615ccf.svg",
-    "static/media/git.svg": "/portfolio/static/media/git.d85c31a48d9019141a693d94bffe5abf.svg",
-    "static/media/html.svg": "/portfolio/static/media/html.04b1cc848fd7209d6476b91130746359.svg",
-    "main.eb017c27.css.map": "/portfolio/static/css/main.eb017c27.css.map",
-    "main.eceea64e.js.map": "/portfolio/static/js/main.eceea64e.js.map"
+    "main.css": "/static/css/main.eb017c27.css",
+    "main.js": "/static/js/main.76fa8276.js",
+    "static/media/liciaflix.webp": "/static/media/liciaflix.c01fdde08404c1fb78df.webp",
+    "static/media/upmktdigital.webp": "/static/media/upmktdigital.5b9606231867807e47e3.webp",
+    "static/media/LPLogo.svg": "/static/media/LPLogo.a1388123ab7d5dd5126c4078b44af312.svg",
+    "static/media/sass.svg": "/static/media/sass.832bcffbbf6389bf302c2ed392aa9c6c.svg",
+    "static/media/dotnet.svg": "/static/media/dotnet.f8e347c567421230db5e2855615206ac.svg",
+    "static/media/mysql.svg": "/static/media/mysql.746a23ecb816e8ad1105e209b56ef5d0.svg",
+    "static/media/react.svg": "/static/media/react.0f4ba0240b3b4c6a16de527f4893e6c4.svg",
+    "static/media/python.svg": "/static/media/python.fe6bd821b3c760108bc2579ac8ab8320.svg",
+    "static/media/javascript.svg": "/static/media/javascript.fe725c64699bd83cef8f4277d029bbf8.svg",
+    "static/media/jira.svg": "/static/media/jira.754465c4af677b8b8c73207a8f2fedb0.svg",
+    "static/media/typescript.svg": "/static/media/typescript.a4562526c286a063fcf48b708d15c0d0.svg",
+    "index.html": "/index.html",
+    "static/media/csharp.svg": "/static/media/csharp.09c8b9f1f62562d41dff693ab10ae4c7.svg",
+    "static/media/css.svg": "/static/media/css.cedea6c9cccbcff87a40de636a615ccf.svg",
+    "static/media/git.svg": "/static/media/git.d85c31a48d9019141a693d94bffe5abf.svg",
+    "static/media/html.svg": "/static/media/html.04b1cc848fd7209d6476b91130746359.svg",
+    "main.eb017c27.css.map": "/static/css/main.eb017c27.css.map",
+    "main.76fa8276.js.map": "/static/js/main.76fa8276.js.map"
   },
   "entrypoints": [
     "static/css/main.eb017c27.css",
-    "static/js/main.eceea64e.js"
+    "static/js/main.76fa8276.js"
   ]
 }
