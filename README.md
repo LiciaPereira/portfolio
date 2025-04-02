@@ -2,7 +2,7 @@
   <h1 align="center">Hi👋, I'm Licia</h1>
   <h3>I solve puzzles through code to create better user experiences.</h3>
   
-  👩🏻‍💻 This is a repository for my portfolio at [liciapereira.com](liciapereira.github.io/portfolio/)
+  👩🏻‍💻 This is a repository for my portfolio at [liciapereira.com](liciapereira.com)
   
   <h3>Connect with me:</h3>
   <p>
