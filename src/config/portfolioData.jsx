@@ -40,7 +40,7 @@ export const portfolioData = {
       usedSkills: ["Wordpress", "PHP", "CSS", "JavaScript"],
     },
     {
-      title: "Netflix Clone",
+      title: "Liciaflix",
       description:
         "A feature-rich React app mimicking Netflix, with Firebase backend and Stripe integration.",
       url: "http://licia-flix.web.app/",
@@ -53,6 +53,7 @@ export const portfolioData = {
         "Stripe",
         "Firebase",
         "Node.js",
+        "HTML",
       ],
     },
   ],
