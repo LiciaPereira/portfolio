@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.eb017c27.css",
-    "main.js": "/static/js/main.76fa8276.js",
+    "main.js": "/static/js/main.00129cf7.js",
     "static/media/liciaflix.webp": "/static/media/liciaflix.c01fdde08404c1fb78df.webp",
     "static/media/upmktdigital.webp": "/static/media/upmktdigital.5b9606231867807e47e3.webp",
     "static/media/LPLogo.svg": "/static/media/LPLogo.a1388123ab7d5dd5126c4078b44af312.svg",
@@ -19,10 +19,10 @@
     "static/media/git.svg": "/static/media/git.d85c31a48d9019141a693d94bffe5abf.svg",
     "static/media/html.svg": "/static/media/html.04b1cc848fd7209d6476b91130746359.svg",
     "main.eb017c27.css.map": "/static/css/main.eb017c27.css.map",
-    "main.76fa8276.js.map": "/static/js/main.76fa8276.js.map"
+    "main.00129cf7.js.map": "/static/js/main.00129cf7.js.map"
   },
   "entrypoints": [
     "static/css/main.eb017c27.css",
-    "static/js/main.76fa8276.js"
+    "static/js/main.00129cf7.js"
   ]
 }
