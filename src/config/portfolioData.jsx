@@ -32,28 +32,53 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "UP! MKT Digital",
+      title: "Weather App",
       description:
-        "A delicate WordPress-based marketing site showcasing modern branding and services.",
-      url: "http://upmkt.digital/",
-      image: "upmktdigital.webp", //1350px width
-      usedSkills: ["Wordpress", "PHP", "CSS", "JavaScript"],
+        "A modern, responsive weather dashboard built with React that displays real-time conditions and 5-day forecasts for any city. Includes dynamic weather-based backgrounds, geolocation detection, temperature unit toggle, and persistent search history with localStorage.",
+      url: "https://liciapereira.github.io/weather-app/",
+      github: "https://github.com/LiciaPereira/weather-app",
+      image: "weather-app.webp", //1350px width
+      usedSkills: [
+        "React.js",
+        "JavaScript (ES6+)",
+        "SCSS",
+        "OpenWeatherMap API",
+        "REST APIs",
+        "Geolocation API",
+        "Responsive Design",
+        "LocalStorage",
+        "GitHub Pages",
+      ],
+    },
+    {
+      title: "Upmkt Digital Website",
+      description:
+        "Developed a responsive, modern website for Upmkt Digital, an e-commerce growth agency focused on fashion, apparel, and consumer goods. Built with HTML, CSS, JavaScript, and PHP, the site features clean design, strong calls-to-action, and optimized performance across devices.",
+      url: "https://upmkt.digital/",
+      image: "upmktdigital.webp",
+      usedSkills: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "PHP",
+        "Responsive Design",
+        "Performance Optimization",
+      ],
     },
     {
       title: "Liciaflix",
       description:
-        "A feature-rich React app mimicking Netflix, with Firebase backend and Stripe integration.",
+        "Developed a Netflix-inspired streaming platform using React, Firebase, and Stripe. Features include user authentication, subscription management, and a responsive, interactive UI.",
       url: "http://licia-flix.web.app/",
       github: "https://github.com/liciapereira/liciaflix",
       image: "liciaflix.webp",
       usedSkills: [
-        "React",
-        "SASS",
-        "JavaScript",
-        "Stripe",
-        "Firebase",
-        "Node.js",
-        "HTML",
+        "React.js",
+        "JavaScript (ES6+)",
+        "Firebase Authentication",
+        "Firestore",
+        "Stripe API",
+        "Responsive Design",
       ],
     },
   ],
