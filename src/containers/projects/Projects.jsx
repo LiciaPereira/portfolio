@@ -22,10 +22,16 @@ function Projects() {
             key={index}
           >
             <div className="project-image">
-              <img
-                src={require(`../../assets/projects/${project.image}`)}
-                alt={`${project.title}`}
-              />
+              <a
+                href={`${project.url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={require(`../../assets/projects/${project.image}`)}
+                  alt={`${project.title}`}
+                />
+              </a>
             </div>
 
             <div className="project-description">
