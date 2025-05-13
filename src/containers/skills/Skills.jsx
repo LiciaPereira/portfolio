@@ -5,18 +5,29 @@ import { portfolioData } from "../../config/portfolioData";
 function Skills() {
   return (
     <div className="skills-section">
-      <h2 className="skills-title">My Skills</h2>
-      <div className="skills-cards">
-        {portfolioData.skills.map((skills, index) => (
-          <div className="skills-card" key={index}>
-            {typeof skills.icon === "object" ? (
-              React.createElement(Object.values(skills.icon)[0], {
+      <h2 id="skills-title" className="skills-title">
+        My Skills
+      </h2>
+      <div className="skills-cards" role="list">
+        {portfolioData.skills.map((skill, index) => (
+          <div className="skills-card" key={index} role="listitem" tabIndex="0">
+            {typeof skill.icon === "object" ? (
+              React.createElement(Object.values(skill.icon)[0], {
                 className: "skill-icon",
+                "aria-hidden": "true",
+                title: skill.name,
               })
             ) : (
-              <img src={skills.icon} alt={skills.name} className="skill-icon" />
+              <img
+                src={skill.icon}
+                alt=""
+                className="skill-icon"
+                aria-hidden="true"
+              />
             )}
-            <p className="skill-name">{skills.name}</p>
+            <p className="skill-name" id={`skill-name-${index}`}>
+              {skill.name}
+            </p>
           </div>
         ))}
       </div>

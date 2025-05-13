@@ -5,7 +5,7 @@ import DevSolutioning from "../../assets/animations/DevSolutioning.json";
 import MailLetter from "../../assets/animations/MailLetter.json";
 import WebDesignData from "../../assets/animations/WebDesignData.json";
 
-const LottieAnimation = (props) => {
+const LottieAnimation = ({ animation, ariaLabel }) => {
   const containerRef = useRef(null);
 
   const getAnimationData = (animationName) => {
@@ -24,18 +24,31 @@ const LottieAnimation = (props) => {
   };
 
   useEffect(() => {
-    const animation = lottie.loadAnimation({
+    const animationInstance = lottie.loadAnimation({
       container: containerRef.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: getAnimationData(props.animation),
+      animationData: getAnimationData(animation),
     });
 
-    return () => animation.destroy();
-  }, [props.animation]);
+    // Add accessibility attributes to the SVG
+    if (containerRef.current && containerRef.current.querySelector("svg")) {
+      const svg = containerRef.current.querySelector("svg");
+      svg.setAttribute("aria-hidden", "true");
+      svg.setAttribute("focusable", "false");
+    }
 
-  return <div ref={containerRef} style={{ width: "100%", height: "100%" }} />;
+    return () => animationInstance.destroy();
+  }, [animation]);
+
+  return (
+    <div
+      ref={containerRef}
+      style={{ width: "100%", height: "100%" }}
+      aria-hidden="true"
+    />
+  );
 };
 
 export default LottieAnimation;
