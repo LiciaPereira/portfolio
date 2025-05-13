@@ -17,23 +17,26 @@ const App = () => {
   };
 
   useEffect(() => {
-    document.body.className = theme; // Optional: Apply the theme to the body as well
+    document.body.className = theme;
   }, [theme]);
 
   return (
     <>
+      <a href="#main-content" className="skip-link sr-only focus-visible">
+        Skip to main content
+      </a>
       <Header theme={theme} toggleTheme={toggleTheme} />
-      <main>
-        <section id="greetings">
+      <main id="main-content" tabIndex="-1">
+        <section id="greetings" aria-labelledby="greeting-title">
           <Greeting />
         </section>
-        <section id="projects">
+        <section id="projects" aria-labelledby="projects-title">
           <Projects />
         </section>
-        <section id="skills">
+        <section id="skills" aria-labelledby="skills-title">
           <Skills />
         </section>
-        <section id="contact">
+        <section id="contact" aria-labelledby="contact-title">
           <Contact />
         </section>
       </main>
