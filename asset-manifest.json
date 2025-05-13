@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb017c27.css",
-    "main.js": "/static/js/main.00129cf7.js",
+    "main.css": "/static/css/main.ca4eb4a8.css",
+    "main.js": "/static/js/main.1bc87ff2.js",
     "static/media/liciaflix.webp": "/static/media/liciaflix.c01fdde08404c1fb78df.webp",
     "static/media/upmktdigital.webp": "/static/media/upmktdigital.5b9606231867807e47e3.webp",
+    "static/media/weather-app.webp": "/static/media/weather-app.8685cb994064220517ed.webp",
     "static/media/LPLogo.svg": "/static/media/LPLogo.a1388123ab7d5dd5126c4078b44af312.svg",
     "static/media/sass.svg": "/static/media/sass.832bcffbbf6389bf302c2ed392aa9c6c.svg",
     "static/media/dotnet.svg": "/static/media/dotnet.f8e347c567421230db5e2855615206ac.svg",
@@ -18,11 +19,11 @@
     "static/media/css.svg": "/static/media/css.cedea6c9cccbcff87a40de636a615ccf.svg",
     "static/media/git.svg": "/static/media/git.d85c31a48d9019141a693d94bffe5abf.svg",
     "static/media/html.svg": "/static/media/html.04b1cc848fd7209d6476b91130746359.svg",
-    "main.eb017c27.css.map": "/static/css/main.eb017c27.css.map",
-    "main.00129cf7.js.map": "/static/js/main.00129cf7.js.map"
+    "main.ca4eb4a8.css.map": "/static/css/main.ca4eb4a8.css.map",
+    "main.1bc87ff2.js.map": "/static/js/main.1bc87ff2.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb017c27.css",
-    "static/js/main.00129cf7.js"
+    "static/css/main.ca4eb4a8.css",
+    "static/js/main.1bc87ff2.js"
   ]
 }
