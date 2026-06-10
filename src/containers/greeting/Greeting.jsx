@@ -6,10 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const Greeting = () => {
-  const { name, bio } = portfolioData.greeting;
+  const { name, bio, resumeUrl } = portfolioData.greeting;
 
   const handleScrollDown = () => {
     window.scrollTo({ top: window.innerHeight + 50, behavior: "smooth" });
+  };
+
+  const handleProjectsClick = (e) => {
+    e.preventDefault();
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleScrollKeyDown = (e) => {
@@ -25,8 +30,18 @@ const Greeting = () => {
         <h2 id="greeting-title">
           Hello! I'm <span className="greeting-name">{name},</span>
         </h2>
-        <h1>Software Developer</h1>
+        <h1>Frontend Developer</h1>
         <h2 className="greeting-bio">{bio}</h2>
+        <div className="greeting-actions">
+          <a href="#projects" onClick={handleProjectsClick}>
+            View Projects
+          </a>
+          {resumeUrl && (
+            <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
+          )}
+        </div>
       </div>
       <div
         className="greeting-animation"

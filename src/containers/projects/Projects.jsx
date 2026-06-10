@@ -24,18 +24,24 @@ function Projects() {
             key={index}
           >
             <div className="project-image">
-              <a
-                href={`${project.url}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`View ${project.title} website`}
-              >
-                <img
-                  src={require(`../../assets/projects/${project.image}`)}
-                  alt={`Screenshot of ${project.title}`}
-                  loading="lazy"
-                />
-              </a>
+              {project.image ? (
+                <a
+                  href={`${project.url || project.github}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${project.title}`}
+                >
+                  <img
+                    src={require(`../../assets/projects/${project.image}`)}
+                    alt={`Screenshot of ${project.title}`}
+                    loading="lazy"
+                  />
+                </a>
+              ) : (
+                <div className="project-placeholder" aria-hidden="true">
+                  <span>{project.title}</span>
+                </div>
+              )}
             </div>
 
             <div className="project-description">

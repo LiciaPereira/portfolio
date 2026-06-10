@@ -68,6 +68,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/liciapereira/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -77,6 +78,7 @@ const Contact = () => {
                 href="https://github.com/liciapereira"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub profile"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
