@@ -49,6 +49,26 @@
   font-weight: normal;
 }
 
+.greeting-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+
+  a {
+    background-color: $primary-color;
+    background-image: linear-gradient($primary-color, #ff6d66);
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+}
+
 .greeting-animation {
   flex: 1;
   max-width: 600px;

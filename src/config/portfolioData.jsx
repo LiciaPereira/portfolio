@@ -14,7 +14,8 @@ import { ReactComponent as Jira } from "../assets/icons/jira.svg";
 export const portfolioData = {
   greeting: {
     name: "Licia",
-    bio: "who solves puzzles through code to create better user experiences.",
+    bio: "a frontend developer focused on React, TypeScript, and user-friendly web applications.",
+    resumeUrl: "/resume.pdf",
   },
   skills: [
     { name: "HTML", icon: { HTML } },
@@ -32,28 +33,75 @@ export const portfolioData = {
   ],
   projects: [
     {
+      title: "Job Tracker App",
+      description:
+        "A job search management app built with React, TypeScript, Firebase, and Tailwind CSS. It helps users track applications, upload resumes and cover letters, manage follow-up reminders, and review job search progress in a dashboard.",
+      github: "https://github.com/LiciaPereira/job-tracker-app",
+      usedSkills: [
+        "React",
+        "TypeScript",
+        "Firebase",
+        "Firestore",
+        "Tailwind CSS",
+        "React Hook Form",
+        "Yup",
+        "Responsive UI",
+      ],
+    },
+    {
+      title: "Licia Docs",
+      description:
+        "A real-time collaborative document editor built with React, TypeScript, Vite, and Firebase. It includes anonymous authentication, document creation, persistent editing, and a rich text editor experience.",
+      url: "https://licia-docs.web.app/",
+      github: "https://github.com/LiciaPereira/licia-docs",
+      usedSkills: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Firebase Auth",
+        "Firestore",
+        "Quill",
+        "Real-time Data",
+      ],
+    },
+    {
+      title: "Liciaflix",
+      description:
+        "A Netflix-inspired streaming app built with React, Firebase, Redux, and Stripe. Features include authentication, protected app screens, movie category rows, profile UI, and subscription flow structure.",
+      url: "https://licia-flix.web.app/",
+      github: "https://github.com/liciapereira/liciaflix",
+      image: "liciaflix.webp",
+      usedSkills: [
+        "React",
+        "JavaScript",
+        "Firebase Authentication",
+        "Firestore",
+        "Redux Toolkit",
+        "Stripe API",
+        "Responsive Design",
+      ],
+    },
+    {
       title: "Weather App",
       description:
-        "A modern, responsive weather dashboard built with React that displays real-time conditions and 5-day forecasts for any city. Includes dynamic weather-based backgrounds, geolocation detection, temperature unit toggle, and persistent search history with localStorage.",
+        "A responsive weather dashboard built with React that displays real-time conditions and 5-day forecasts. Includes geolocation detection, temperature unit toggles, dynamic weather backgrounds, and persistent search history.",
       url: "https://liciapereira.github.io/weather-app/",
       github: "https://github.com/LiciaPereira/weather-app",
-      image: "weather-app.webp", //1350px width
+      image: "weather-app.webp",
       usedSkills: [
-        "React.js",
-        "JavaScript (ES6+)",
+        "React",
+        "JavaScript",
         "SCSS",
         "OpenWeatherMap API",
         "REST APIs",
         "Geolocation API",
-        "Responsive Design",
         "LocalStorage",
-        "GitHub Pages",
       ],
     },
     {
       title: "Upmkt Digital Website",
       description:
-        "Developed a responsive, modern website for Upmkt Digital, an e-commerce growth agency focused on fashion, apparel, and consumer goods. Built with HTML, CSS, JavaScript, and PHP, the site features clean design, strong calls-to-action, and optimized performance across devices.",
+        "A responsive business website for an e-commerce growth agency focused on fashion, apparel, and consumer goods. The site uses clean calls-to-action, mobile-friendly layouts, and performance-conscious frontend implementation.",
       url: "https://upmkt.digital/",
       image: "upmktdigital.webp",
       usedSkills: [
@@ -63,22 +111,6 @@ export const portfolioData = {
         "PHP",
         "Responsive Design",
         "Performance Optimization",
-      ],
-    },
-    {
-      title: "Liciaflix",
-      description:
-        "Developed a Netflix-inspired streaming platform using React, Firebase, and Stripe. Features include user authentication, subscription management, and a responsive, interactive UI.",
-      url: "http://licia-flix.web.app/",
-      github: "https://github.com/liciapereira/liciaflix",
-      image: "liciaflix.webp",
-      usedSkills: [
-        "React.js",
-        "JavaScript (ES6+)",
-        "Firebase Authentication",
-        "Firestore",
-        "Stripe API",
-        "Responsive Design",
       ],
     },
   ],

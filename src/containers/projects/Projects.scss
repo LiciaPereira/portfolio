@@ -77,12 +77,43 @@
 .project-image {
   padding: 2rem 1rem;
   max-width: 450px;
+  width: 50%;
   border: none;
   object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+  }
+}
+
+.project-placeholder {
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba($primary-color, 0.15), rgba(255, 109, 102, 0.16)),
+    rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba($primary-color, 0.2);
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+  display: flex;
+  min-height: 260px;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+
+  span {
+    color: inherit;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .dark-theme & {
+    background:
+      linear-gradient(135deg, rgba($primary-color, 0.2), rgba(255, 109, 102, 0.14)),
+      rgba(255, 255, 255, 0.05);
   }
 }
 
@@ -158,6 +189,11 @@
     width: 100%;
     padding: 1rem;
     text-align: center;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 100%;
   }
 
   .project-video-container {
