@@ -30,7 +30,7 @@ const Greeting = () => {
         <h2 id="greeting-title">
           Hello! I'm <span className="greeting-name">{name},</span>
         </h2>
-        <h1>Frontend Developer</h1>
+        <h1>Software Developer</h1>
         <h2 className="greeting-bio">{bio}</h2>
         <div className="greeting-actions">
           <a href="#projects" onClick={handleProjectsClick}>

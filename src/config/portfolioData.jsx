@@ -14,7 +14,7 @@ import { ReactComponent as Jira } from "../assets/icons/jira.svg";
 export const portfolioData = {
   greeting: {
     name: "Licia",
-    bio: "a frontend developer focused on React, TypeScript, and user-friendly web applications.",
+    bio: "I build React, TypeScript, and .NET applications with clean interfaces, reliable workflows, and practical backend integrations.",
     resumeUrl: "/resume.pdf",
   },
   skills: [
