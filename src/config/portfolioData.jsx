@@ -36,6 +36,7 @@ export const portfolioData = {
       title: "Job Tracker App",
       description:
         "A job search management app built with React, TypeScript, Firebase, and Tailwind CSS. It helps users track applications, upload resumes and cover letters, manage follow-up reminders, and review job search progress in a dashboard.",
+      url: "https://liciapereira.github.io/job-tracker-app/",
       github: "https://github.com/LiciaPereira/job-tracker-app",
       usedSkills: [
         "React",
@@ -52,7 +53,7 @@ export const portfolioData = {
       title: "Licia Docs",
       description:
         "A real-time collaborative document editor built with React, TypeScript, Vite, and Firebase. It includes anonymous authentication, document creation, persistent editing, and a rich text editor experience.",
-      url: "https://licia-docs.web.app/",
+      url: "https://liciapereira.github.io/licia-docs/",
       github: "https://github.com/LiciaPereira/licia-docs",
       usedSkills: [
         "React",
